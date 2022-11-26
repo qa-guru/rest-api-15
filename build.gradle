@@ -1,16 +1,20 @@
 plugins {
     id 'java-library'
+    id "io.freefair.lombok" version "6.0.0-m2"
 }
 
 repositories {
     mavenCentral()
 }
 
-def slf4jVersion = "1.7.32"
+def assertJVersion = "3.23.1",
+    slf4jVersion = "1.7.32"
 
 dependencies {
     testImplementation(
             "io.rest-assured:rest-assured:5.3.0",
+            "com.fasterxml.jackson.core:jackson-databind:2.14.1",
+            "org.assertj:assertj-core:$assertJVersion",
             "org.junit.jupiter:junit-jupiter:5.9.0",
             "org.slf4j:slf4j-simple:$slf4jVersion"
     )
