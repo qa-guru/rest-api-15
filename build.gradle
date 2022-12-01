@@ -28,8 +28,11 @@ allure {
 
 dependencies {
     testImplementation(
+            "com.codeborne:selenide:6.5.2",
+            "io.qameta.allure:allure-selenide:$allureVersion",
             "io.rest-assured:rest-assured:5.3.0",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "com.github.javafaker:javafaker:1.0.2",
             "com.fasterxml.jackson.core:jackson-databind:2.14.1",
             "org.assertj:assertj-core:$assertJVersion",
             "org.junit.jupiter:junit-jupiter:5.9.0",
